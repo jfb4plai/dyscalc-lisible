@@ -1,0 +1,77 @@
+:root {
+  --orange: #f97316;
+  --orange-bg: #fff3e8;
+  --orange-border: #f97316;
+}
+
+.plai-help {
+  font-size: 12.5px;
+  color: var(--text3);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* ── Garde-fou : bandeau non négociable ── */
+.gardefou {
+  background: var(--orange-bg);
+  border: 1px solid var(--orange-border);
+  border-radius: var(--radius);
+  padding: 0.85rem 1.1rem;
+  font-size: 13.5px;
+  color: #8a3d0a;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.gardefou strong { color: #7a3006; }
+
+/* ── Zone de reformatage : original vs proposition éditable ── */
+.reformat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 720px) {
+  .reformat-grid { grid-template-columns: 1fr; }
+}
+.reformat-col h3 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text3);
+  margin-bottom: 0.5rem;
+}
+.reformat-original {
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text2);
+  padding: 1rem;
+  background: var(--surface2);
+  border-radius: var(--radius-sm);
+  min-height: 160px;
+}
+.reformat-editable {
+  width: 100%;
+  min-height: 220px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 1rem;
+  border: 1px solid var(--teal-border);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--text);
+  resize: vertical;
+}
+.reformat-editable:focus { outline: 2px solid var(--teal); outline-offset: 1px; }
+
+.chip-row { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+
+@media print {
+  .plai-nav, .plai-footer, .no-print { display: none !important; }
+  body { background: #fff; }
+  .reformat-grid { grid-template-columns: 1fr 1fr; }
+}
