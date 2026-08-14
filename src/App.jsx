@@ -45,7 +45,7 @@ export default function App() {
     <div>
       <nav className="plai-nav">
         <a href="/" className="plai-nav-logo">
-          <img src="/plai-logo.jpg" alt="PLAI" style={{ width: 32, height: 32, borderRadius: 6 }} />
+          <img src="/plai-logo.jpg" alt="PLAI" style={{ height: 32, width: 'auto', borderRadius: 6 }} />
           DyscalcLisible
         </a>
         <div className="plai-nav-actions">
