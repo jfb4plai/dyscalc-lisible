@@ -240,6 +240,13 @@ export default function App() {
       <footer className="plai-footer">
         <p>Ancrage scientifique (corpus RISS) : Le Cam &amp; Toussaint (2017) — la première difficulté réside dans la compréhension de l'énoncé ; Boiteault &amp; Percheminier (2022) — la relecture/schématisation de l'énoncé réduit la surcharge cognitive.</p>
         <p>PLAI — Pôle Liégeois d'Accompagnement vers une École Inclusive</p>
+        <p>
+          Code :{' '}
+          <a href="https://polyformproject.org/licenses/noncommercial/1.0.0" target="_blank" rel="noopener noreferrer">PolyForm Noncommercial 1.0.0</a>
+          {' · '}Contenus :{' '}
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a>
+          {' · '}Jean-François Beguin, jfb4plai.com
+        </p>
       </footer>
     </div>
   );
